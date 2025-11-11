@@ -56,34 +56,34 @@ Streamlit / Dash / Plotly.
 - Optional: send daily summary via email (for internal testing).
 
 ### 5. Folder Structure
-SmartDealAI/
-│
-├── data/
-│   ├── raw/
-│   ├── clean/
-│   └── logs/
-│
-├── scrapers/
-│   ├── trendyol_scraper.py
-│   ├── hepsiburada_scraper.py
-│   └── amazon_scraper.py
-│
-├── ml_models/
-│   ├── arima_model.py
-│   ├── prophet_model.py
-│   └── xgboost_model.py
-│
-├── dashboard/
-│   └── app.py
-│
-├── utils/
-│   └── data_cleaning.py
-│
-└── main.py
+SmartDealAI/ <br />
+│ <br />
+├── data/ <br />
+│   ├── raw/ <br />
+│   ├── clean/ <br />
+│   └── logs/ <br />
+│ <br />
+├── scrapers/ <br />
+│   ├── trendyol_scraper.py <br />
+│   ├── hepsiburada_scraper.py <br />
+│   └── amazon_scraper.py <br />
+│ <br />
+├── ml_models/ <br />
+│   ├── arima_model.py <br />
+│   ├── prophet_model.py <br />
+│   └── xgboost_model.py <br />
+│ <br />
+├── dashboard/ <br />
+│   └── app.py <br />
+│ <br />
+├── utils/ <br />
+│   └── data_cleaning.py <br />
+│ <br />
+└── main.py <br />
 
 ### 6. Output Goals (for Phase 1 completion)
 
-✅ Scrape ≥ 200 data points per product.
-✅ Train & evaluate ≥ 2 models.
-✅ Dashboard showing actual vs predicted trend.
-✅ RMSE report + basic recommendation (“buy now/wait”).
+✅ Scrape ≥ 200 data points per product. <br />
+✅ Train & evaluate ≥ 2 models. <br />
+✅ Dashboard showing actual vs predicted trend. <br />
+✅ RMSE report + basic recommendation (“buy now/wait”). <br />
