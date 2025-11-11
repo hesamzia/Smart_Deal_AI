@@ -49,3 +49,41 @@ Streamlit / Dash / Plotly.
 - “Buy Now / Wait” indicator
     - “Buy Now” → model predicts price rise.
     - “Wait” → model predicts drop or stable.
+
+### 4. Automation & Logging
+- Use cron (Linux) or Task Scheduler (Windows) to re-run scraping daily.
+- Log model performance: rmse_log.csv
+- Optional: send daily summary via email (for internal testing).
+
+### 5. Folder Structure
+SmartDealAI/
+│
+├── data/
+│   ├── raw/
+│   ├── clean/
+│   └── logs/
+│
+├── scrapers/
+│   ├── trendyol_scraper.py
+│   ├── hepsiburada_scraper.py
+│   └── amazon_scraper.py
+│
+├── ml_models/
+│   ├── arima_model.py
+│   ├── prophet_model.py
+│   └── xgboost_model.py
+│
+├── dashboard/
+│   └── app.py
+│
+├── utils/
+│   └── data_cleaning.py
+│
+└── main.py
+
+### 6. Output Goals (for Phase 1 completion)
+
+✅ Scrape ≥ 200 data points per product.
+✅ Train & evaluate ≥ 2 models.
+✅ Dashboard showing actual vs predicted trend.
+✅ RMSE report + basic recommendation (“buy now/wait”).
