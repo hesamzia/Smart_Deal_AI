@@ -20,3 +20,21 @@ Build a working prototype that:
 - Handle duplicates, convert timestamps, fill missing values.
 - Normalize price units (₺ / USD).
 - Export as clean_prices.csv.
+
+### 2. Machine Learning Engine
+#### Goal: Predict next-day (or next-week) product price.
+
+|Model|Type|Use Case|Notes|
+|:-|:-|:-|:-|
+|ARIMA|Statistical|Baseline trend forecasting|Works well on stable time-series|
+|Prophet|Hybrid|Handles seasonality, missing data|Ideal for daily trends|
+|XGBoost|ML|Captures nonlinear price changes|For advanced experiments|  
+
+#### Evaluation Metric:
+RMSE = √((Σ(pred − actual)²) / n)
+
+#### Cycle:
+1- Train on first N days.
+2- Predict next k days.
+3- Compute RMSE.
+4- Retrain daily/weekly.
