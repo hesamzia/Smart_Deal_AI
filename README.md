@@ -34,7 +34,18 @@ Build a working prototype that:
 RMSE = √((Σ(pred − actual)²) / n)
 
 #### Cycle:
-1- Train on first N days.
-2- Predict next k days.
-3- Compute RMSE.
-4- Retrain daily/weekly.
+- Train on first N days.
+- Predict next k days.
+- Compute RMSE.
+- Retrain daily/weekly.
+
+### 3. Dashboard (Minimal Prototype)
+
+#### Tool Options: 
+Streamlit / Dash / Plotly.
+#### Views:
+- Price Timeline (actual vs. predicted)
+- Model RMSE comparison
+- “Buy Now / Wait” indicator
+    - “Buy Now” → model predicts price rise.
+    - “Wait” → model predicts drop or stable.
